@@ -1,11 +1,11 @@
-# Daily Agenda for Roam using Kanban (v 0.1)
+# day by day for Roam using Kanban (v 0.1)
 
 Contributors: @GitMurf
 Testing and ideation: David Eaton, @dkapila
 
 Many new note-taking apps have a calendar or agenda view for each day. This is quite helpful, e.g., to "schedule" tasks or events, as well as to organize your work or interstitial journaling for the day against timestamps.
 
-The {{[[kanban]]}} feature in Roam is quite under-leveraged - this is an attempt to use it as the basis for a **Daily Agenda** worfklow.
+The {{[[kanban]]}} feature in Roam is quite under-leveraged - this is an attempt to use it as the basis for a **day by day** worfklow.
 
 ![](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/kanban%20agenda/kanban%20agenda%20screenshot.png?raw=true)
 
@@ -15,8 +15,8 @@ Watch this video to get a good sense for the workflow: [link](https://www.loom.c
 
 It all starts with a simply daily notes template in the format:
 
-- [[roam/templates]] Daily agenda
-    - [[Daily agenda]]
+- [[roam/templates]] day by day
+    - [[day by day]]
         - {{[[kanban]]}}
             - All day
             - 00:00
@@ -56,13 +56,13 @@ Insert this line up top on your [[roam/css]] page along with any other @ import 
 ```
 @import url('https://abhayprasanna.github.io/kanban%20agenda/kanban-agenda.css');
 ```
-This CSS will ONLY impact kanbans nested below the [[Daily agenda]] page link.
+This CSS will ONLY impact kanbans nested below the [[day by day]] page link.
 
-It refactors Roam's default kanban view to appear like a Daily agenda. It's been designed to be pinned in your right sidebar every day. In the main page, the kanban will be hidden unless you zoom into the specific block it is in. This helps avoid clutter in your Daily Notes page when you're just trying to plan your day, and avoids having a duplicate view in the main page and the right sidebar.
+It refactors Roam's default kanban view to appear like a day by day. It's been designed to be pinned in your right sidebar every day. In the main page, the kanban will be hidden unless you zoom into the specific block it is in. This helps avoid clutter in your Daily Notes page when you're just trying to plan your day, and avoids having a duplicate view in the main page and the right sidebar.
 
 The first and last kanban columns are reserved for all-day events and "need to plan" unscheduled events / backlog items that need to be processed. Those two will act as stickies at the top and bottom so they are always visible.
 
-Feel free to customize the CSS yourself - I especially recommend adjusting the title of the kanban board to whatever you prefer (though if you want to change the [[Daily agenda]] page to something else you will need to replace it throughout the code). You can also highlight your working hours and change them (default is 8am to 7pm)
+Feel free to customize the CSS yourself - I especially recommend adjusting the title of the kanban board to whatever you prefer (though if you want to change the [[day by day]] page to something else you will need to replace it throughout the code). You can also highlight your working hours and change them (default is 8am to 7pm)
 
 Do share any feedback and suggestions!
 

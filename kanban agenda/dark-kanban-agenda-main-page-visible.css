@@ -1,13 +1,13 @@
 /* for use with better dark age themes */
 
 :root {
-  --calendar-title: "Daily agenda"; /* Change the title - doesn't affect page link which you'll need to update throughout the code */
+  --calendar-title: "day by day"; /* Change the title - doesn't affect page link which you'll need to update throughout the code */
   --current-hr-bg: var(--hashtags); /* Only if you use Murf's JS */
   --sliver-color: var(--background); /* Only if you use Murf's JS */
 }
 
 /* Highlight working hours - replace 10 and 20 with your start/end times + 3 */
-div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:nth-of-type(n+10):nth-of-type(-n+20) {
+div[data-path-page-links*="day by day"] .kanban-column-container > .kanban-column:nth-of-type(n+10):nth-of-type(-n+20) {
   background-color: var(--sidebar-background);
 }
 
@@ -16,7 +16,7 @@ div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-col
   visibility: hidden;
 }
 
-/* Add some helper text when daily agenda is collapsed in right sidebar */
+/* Add some helper text when day by day is collapsed in right sidebar */
 #right-sidebar div[style*="max-height: 4.8em;"] .kanban-board:before {
   content: var(--calendar-title) " (click to view in main page)";
   visibility: visible;
@@ -33,7 +33,7 @@ div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-col
 }
 
 /* Style the kanban board */
-div[data-path-page-links*="Daily agenda"] .kanban-board {
+div[data-path-page-links*="day by day"] .kanban-board {
   max-height: 80vh;
   overflow: scroll;
   display: -webkit-flex;
@@ -44,8 +44,8 @@ div[data-path-page-links*="Daily agenda"] .kanban-board {
   background-color: var(--background);
 }
 
-/* Add a title to the Daily agenda */
-div[data-path-page-links*="Daily agenda"] .kanban-board::before {
+/* Add a title to the day by day */
+div[data-path-page-links*="day by day"] .kanban-board::before {
   content: var(--calendar-title);
   font-weight: 600;
   font-size: 2em;
@@ -56,7 +56,7 @@ div[data-path-page-links*="Daily agenda"] .kanban-board::before {
 }
 
 /* Make first column of all day cards sticky */
-div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:first-child {
+div[data-path-page-links*="day by day"] .kanban-column-container > .kanban-column:first-child {
   position: sticky;
   top: 0;
   background-color: var(--kanban-column-background);
@@ -66,7 +66,7 @@ div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-col
 }
 
 /* Make last column of need to plan cards sticky */
-div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-column:last-child {
+div[data-path-page-links*="day by day"] .kanban-column-container > .kanban-column:last-child {
   position: sticky;
   bottom: 0;
   background-color: var(--kanban-column-background);
@@ -76,14 +76,14 @@ div[data-path-page-links*="Daily agenda"] .kanban-column-container > .kanban-col
 }
 
 /* Change flex direction of column container */
-div[data-path-page-links*="Daily agenda"] .kanban-column-container {
+div[data-path-page-links*="day by day"] .kanban-column-container {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
 }
 
 /* Change flex direction of columns and style them */
-div[data-path-page-links*="Daily agenda"] .kanban-column {
+div[data-path-page-links*="day by day"] .kanban-column {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -94,7 +94,7 @@ div[data-path-page-links*="Daily agenda"] .kanban-column {
 }
 
 /* Style the column titles */
-div[data-path-page-links*="Daily agenda"] .kanban-title {
+div[data-path-page-links*="day by day"] .kanban-title {
   border-bottom: none;
   border-right: solid 1px var(--references);
   min-width: 50px;
@@ -110,7 +110,7 @@ div[data-path-page-links*="Daily agenda"] .kanban-title {
 }
 
 /* Style each card */
-div[data-path-page-links*="Daily agenda"] .kanban-card {
+div[data-path-page-links*="day by day"] .kanban-card {
   margin: auto 4px auto 4px;
   padding: 4px;
   max-height: 40px;
